@@ -180,18 +180,18 @@ function esPrimo(num) {
    // [Nota]: los números negativos, 0 y 1 NO son números primos.
    // Tu código:
 
-   var primo = true;
+
    if (num < 2) {
-      primo = false;
+      return false;
    }
-   else {
-      for (var i = 2; i < num; i++) {
-         if (num % i == 0) {
-            primo = false;
-         }
+
+   for (var i = 2; i < num; i++) {
+      if (num % i == 0) {
+         return false;
       }
    }
-   return primo;
+
+   return true;
 }
 
 function esVerdadero(valor) {
@@ -211,11 +211,8 @@ function tieneTresDigitos(num) {
    // Si el número recibido tiene tres dígitos retornar true.
    // Caso contrario, retornar false.
    // Tu código:
-   if (num > 99 && num < 1000) {
-      return true;
-   } else {
-      return false;
-   }
+   return (num > 99 && num < 1000);
+
 
 }
 
@@ -228,7 +225,7 @@ function doWhile(num) {
    // Tu código:
    let contador = 0;
    do {
-      num = num +5;
+      num = num + 5;
       contador++;
    } while (contador < 8);
 

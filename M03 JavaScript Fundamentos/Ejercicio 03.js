@@ -37,7 +37,7 @@ function esPar(num) {
    // De lo contrario, retorna false.
    // Tu código:
    return (num % 2 == 0);
-
+   
 }
 
 function esImpar(num) {

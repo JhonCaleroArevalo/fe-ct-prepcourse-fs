@@ -31,14 +31,14 @@ function redondearNumero(num) {
    // Redondea "num" al entero más próximo y retórnalo.
    // Tu código:
 
- return Math.round (num);
+return Math.round (num);
 }
 
 function redondearHaciaArriba(num) {
    // Redondea "num" hacia arriba y retórnalo.
    // Tu código:
 
-   return Math.ceil (num);
+return Math.ceil (num);
 }
 
 function numeroRandom() {
